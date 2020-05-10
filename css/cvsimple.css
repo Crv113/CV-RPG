@@ -1,0 +1,253 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto;
+    
+}
+
+/* ========== NAV ========== */
+.bg {
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-position-x: left;
+    background-position-y: top;
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.8);
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navi {
+    width: 110%;
+}
+
+nav a {
+    transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+nav li {
+    transition: all 0.2s ease-in-out;
+}
+
+nav li:hover {
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0px -2px 0px 0px #FFF;
+    transition: all 0.2s ease-in-out;
+}
+
+nav #burger {
+    border: 0px solid transparent;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+/* ========== HOME SECTION ========== */
+
+#home {
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 12s ease infinite;
+    height: 100vh;
+    display: flex;
+    z-index: 10;
+   
+}
+
+@keyframes gradient { /*Background animation*/
+    0% {
+        background-position: 0% 50%;
+	}
+	50% {
+        background-position: 100% 50%;
+	}
+	100% {
+        background-position: 0% 50%;
+	}
+}
+
+h1 {
+    font-family: monospace;
+    color: white;
+    margin-top: 20px;
+    font-size: 4vw;
+}
+
+#typing {
+    margin-left: 10px;
+}
+
+#under {
+    opacity: 100;
+}
+
+
+
+/* ========== OTHER SECTION ========== */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+}
+
+#about {
+    margin-top: 10px;
+}
+
+#about-img {
+    width: 200px;
+}
+
+#education, #project {
+    background-color: rgb(239, 239, 239);
+}
+
+h2 {
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+}
+
+#education h5 {
+    font-size: x-large;
+    font-family: BebasNeue;
+    color: #284277;
+}
+
+/* ========== PROJECT ========== */
+/* Development */
+a, a:hover {
+    color: inherit;
+}
+
+.project-box {
+    background-color: white;
+    height: 250px;
+    overflow: hidden;
+    margin: 20px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+.project-box:hover {
+    cursor: pointer;
+}
+
+.project-box-title {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150px;
+    transition: 0.3s;
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+.project-box-title h6 {
+    line-height: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.project-box-info {
+    background-color: #c0c0c0b9;
+    font-size: smaller;
+    line-height: 100px;
+   
+}
+
+.project-box-info p {
+    line-height: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.project-box:hover .project-box-title {
+    line-height: 250px;
+    
+}
+/* ========== PROJECT ========== */
+/* software */ 
+.video {
+    margin-top: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ========== CONTACT ========== */
+.social {
+    width: 64px;
+    height: 64px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

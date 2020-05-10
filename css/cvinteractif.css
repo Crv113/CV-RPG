@@ -1,0 +1,675 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('Roboto-Regular.ttf');
+}
+
+#wrap {
+    /*margin: 0;
+    padding: 0;*/
+    overflow-x: hidden;
+    position: relative;
+    font-family: Roboto;
+}
+
+#frame {
+    height: 937px;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/grass3.png);
+    width: 100%;
+    height: inherit;
+    object-fit: fill;
+}
+
+#sea {
+    background-image: url(../img/sea.png);
+    width: 100vw;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    animation: seamove 6s linear infinite;
+}
+
+#sea::after {
+    background: url(../img/fenceX.png) repeat-x top;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: "";
+}
+
+/* ================ DECORATIVE OBJECTS CSS ================*/
+/*FLOWER POSITIONS*/
+.flowers {
+    background: url(../img/flowers2.png);
+    position: absolute;
+    width: 16px;
+    height: 14px;
+}
+
+#flower1 {
+    top: 475px;
+    left: 50%;
+    transform: translate(-796px);
+}
+
+#flower2 {
+    top: 570px;
+    left: 50%;
+    transform: translate(-185px);
+}
+
+#flower3 {
+    top: 853px;
+    left: 50%;
+    transform: translate(-321px);
+}
+
+#flower4 {
+    top: 359px;
+    right: 705px;
+}
+
+#flower5 {
+    top: 865px;
+    right: 50%;
+    transform: translate(724px);
+}
+
+#flower6 {
+    top: 699px;
+    right: 582px;
+}
+
+/*TRUNK POSITIONS*/
+.trunks {
+    background: url(../img/trunk.png);
+    position: absolute;
+    width: 32px;
+    height: 30px;
+}
+
+#trunk1 {
+    top: 570px;
+    left: 50%;
+    transform: translate(-480px);
+}
+
+#trunk2 {
+    top: 470px;
+    left: 50%;
+    transform: translate(-728px);
+}
+
+#trunk3 {
+    top: 315px;
+    right: 50%;
+    transform: translate(351px);
+}
+
+#trunk4 {
+    top: 756px;
+    right: 50%;
+    transform: translate(645px);
+}
+
+/*TREES POSITIONS*/
+.trees {
+    background: url(../img/tree.png);
+    position: absolute;
+    width: 42px;
+    height: 56px;
+}
+
+#tree1 {
+    top: 390px;
+    left: 50%;
+    transform: translate(165px);
+    width: 100%;
+}
+
+#tree6 {
+    top: 620px;
+    left: 50%;
+    transform: translate(165px);
+    width: 100%;
+}
+
+#tree2 {
+    top: 225px;
+    right: 50%;
+    width: 840px;
+    transform: translate(-165px);
+}
+
+#tree3 {
+    top: 225px;
+    left: 50%;
+    transform: translate(165px);
+    width: 100%;
+}
+
+#tree4 {
+    top: 500px;
+    right: 50%;
+    width: 840px;
+    transform: translate(-165px);
+}
+
+#tree5 {
+    top: 765px;
+    right: 50%;
+    width: 840px;
+    transform: translate(-165px);
+}
+/* ================ ADMIN PANEL ACCESS ================*/
+#admin-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+}
+
+#admin-panel:hover {
+    cursor: pointer;
+}
+
+/* ================ FENCES CSS ================*/
+#left-fence {
+    width: 6px;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    margin-left: -156px;
+    background: url(../img/fenceY.png) repeat-y top;
+    position: absolute;
+}
+
+#right-fence {
+    width: 6px;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    margin-left: 152px;
+    background: url(../img/fenceY.png) repeat-y top;
+    position: absolute;
+}
+
+#about-road::before,
+#education-road::before,
+#project-road::before {
+    background: url(../img/fenceX.png) repeat-x bottom;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    left: 0;
+    content: "";
+}
+
+#about-road::after,
+#education-road::after,
+#project-road::after {
+    background: url(../img/fenceX.png) repeat-x top;
+    width: 100%;
+    height: 15px;
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    content: "";
+
+}
+
+/* ================ ROADS CSS ================*/
+.road {
+    background: url(../img/road.png);
+    position: absolute;
+    left: 50%;
+}
+
+.side-road {
+    width: 50%;
+    height: 150px;
+    display: flex;
+}
+
+#about-road {
+    top: 300px;
+    transform: translate(-100%);
+}
+
+#education-road {
+    top: 450px;
+}
+
+#project-road {
+    top: 600px;
+    transform: translate(-100%);
+}
+
+#main-road {
+    width: 300px;
+    height: inherit;
+    top: 0;
+    transform: translate(-50%);
+}
+
+/* ================ CHESTS CSS ================*/
+.chest {
+    position: absolute;
+    top: 38px;
+    width: 41px;
+    height: 74px;
+}
+
+.chest:hover {
+    cursor: pointer;
+}
+
+#about-chest {
+    background: url(../img/chest0.png);
+    top: 337px;
+    left: 50px;
+
+}
+
+#education-chest {
+    background: url(../img/chest0.png);
+    top: 487px;
+    right: 50px;
+}
+
+#project-chest {
+    background: url(../img/chest0.png);
+    top: 637px;
+    left: 50px;
+}
+
+#contact-chest {
+    position: absolute;
+    top: 870px;
+    left: 50%;
+    transform: translate(-50%);
+    background: url(../img/chestB0.png);
+    width: 58px;
+    height: 59px;
+    
+}
+
+/* ================ SIGNS CSS ================*/
+#about-sign {
+    position: absolute;
+    left: 150px;
+    top: 320px;
+}
+
+#education-sign {
+    position: absolute;
+    top: 470px;
+    right: 150px;
+}
+
+#project-sign {
+    position: absolute;
+    top: 620px;
+    left: 150px;
+}
+
+#contact-sign {
+    position: absolute;
+    top: 870px;
+    left: 50%;
+    transform: translate(-220%);
+}
+
+.sign-content {
+    position: absolute;
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+    font-size: small;
+    padding: 5px 10px;
+    z-index: 2;
+    
+}
+
+#about-sign-content {
+    top: 290px ;
+    left: 150px;
+    transform: translate(-23%);
+    opacity: 0;
+}
+
+#education-sign-content {
+    top: 440px;
+    right: 150px;
+    transform: translate(37%);
+    opacity: 0;
+}
+
+#project-sign-content {
+    
+    top: 590px;
+    left: 150px;
+    transform: translate(-28%);
+    opacity: 0;
+}
+
+#contact-sign-content {
+    top: 840px;
+    left: 50%;
+    transform: translate(-130%);
+    opacity: 0;
+}
+
+.sign-content::after,
+#education-sign-content::after,
+#contact-sign-content::after{
+
+    position: absolute;
+    left: 50%;
+    margin-left: -6px;
+    bottom: -6px;
+    border-top: 6px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    content: "";
+
+}
+.sign:hover + #about-sign-content,
+.sign:hover + #education-sign-content,
+.sign:hover + #project-sign-content,
+.sign:hover + #contact-sign-content,
+#about-chest:hover ~ #about-sign-content,
+#education-chest:hover ~ #education-sign-content,
+#project-chest:hover ~ #project-sign-content,
+#contact-chest:hover ~ #contact-sign-content {
+    opacity: 100;
+}
+
+#bridge {
+    background-image: url(../img/bridge3.png);
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 0;
+}
+
+#player {
+    position: absolute;
+    width: 49px;
+    height: 47px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 75px;
+}
+
+
+
+/* ================ OVERLAYS CSS ================*/
+.overlay-bg {
+    background-color: rgba(0, 0, 0, 0.45);
+    overflow: hidden;
+    transition: 0.3s;
+    position: fixed;
+}
+
+.overlay-title{
+    text-decoration: underline;
+}
+
+.overlay-content {
+    overflow: auto;
+    height: auto;
+    max-height: 90vh;
+    margin-top: 5vh;;
+    background: white;
+    padding-bottom: 20px;
+}
+
+.header-overlay {
+    position: sticky;
+    top: 0;
+    border-bottom: solid 1px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, .3);
+    background-color: #efefef;
+    z-index: 1;
+}
+
+.text-overlay {
+    padding: 10px 0;
+}
+.close-overlay-btn {
+    position: absolute;
+    top: 5px;
+    right: 25px;
+    font-size: xx-large;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.close-overlay-btn:hover {
+    color: dimgrey;
+    cursor: pointer;
+}
+
+h5 {
+    text-decoration: underline;
+}
+
+h2, h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+p > a {
+    font-weight: 600;
+    text-decoration: underline;
+    
+}
+/* How to play */
+#howtoplay-overlay {
+    height: 100vh;
+}
+/* About */
+#about-overlay {
+   height: 0;
+}
+
+#about-img {
+    width: 200px;
+}
+
+/* Education */
+#education-overlay {
+   height: 0;
+}
+
+#education-overlay h5 {
+    font-size: x-large;
+    font-family: BebasNeue;
+    color: #284277;
+}
+
+#project-overlay {
+    height: 0;
+}
+
+#contact-overlay {
+   height: 0;
+}
+
+
+
+/* ========== PROJECT OVERLAY CONTENT ========== */
+/* Development */
+a, a:hover {
+    color: inherit;
+}
+
+.project-box {
+    background-color: white;
+    height: 250px;
+    overflow: hidden;
+    margin: 20px 10px 0px 10px;
+    border-radius: 5px;
+}
+
+.project-box:hover {
+    cursor: pointer;
+}
+
+.project-box-title {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 150px;
+    transition: 0.3s;
+    background-color: rgb(35, 35, 35);
+    color: white;
+}
+
+.project-box-title h4 {
+    line-height: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+    
+}
+
+.project-box-info {
+    background-color: #efefef;
+    font-size: smaller;
+    line-height: 100px;
+   
+}
+
+.project-box-info p {
+    line-height: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.project-box:hover .project-box-title {
+    line-height: 250px;
+    
+}
+
+/* software */ 
+.video {
+    margin-top: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ================ CONTACT OVERLAY CONTENT ================*/
+.social {
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+}
+
+/* ================ OVERLAY SCROLLBAR ================*/
+
+.overlay-content::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+.overlay-content::-webkit-scrollbar
+{
+	width: 8px;
+	background-color: #F5F5F5;
+}
+
+.overlay-content::-webkit-scrollbar-thumb
+{
+    box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #c1c1c1;
+}
+
+/* ================ ALL MEDIA QUERYS ================*/
+@media (max-width: 720px) {
+    #about-sign {
+        top: 320px;
+        left: 100px;
+    }
+    #education-sign {
+        top: 470px;
+        right: 100px;
+    }
+    #project-sign {
+        top: 620px;
+        left: 100px;
+
+    }
+
+    #about-sign-content {
+        left: 100px;
+    }
+    #education-sign-content {
+        right: 100px;
+    }
+    #project-sign-content {
+        left: 100px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    #main-road {
+        width: 200px;
+    }
+    
+    #bridge {
+        width: 200px;
+        background-position: center;
+    }
+    #left-fence {
+        margin-left: -106px;
+    }
+    #right-fence {
+        margin-left: 102px;
+    }
+}
+
+@keyframes seamove {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 65px 0;
+    }
+}

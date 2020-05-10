@@ -1,0 +1,44 @@
+#generalContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+body {
+     background-color: #ececec;
+}
+
+header {
+    text-align: center;
+    font-family: Arial;
+    border-bottom: solid;
+    border-color: #525252;
+    border-bottom-width: 5px;
+}
+
+#left {
+    background-color: #e0e0e0;
+    border-left: solid;
+    border-color: #525252;
+    border-left-width: 5px;
+    width: 30%;
+    margin-top: 20px;
+    
+}
+
+#center, #right {
+    width: 30%;
+    margin-top: 20px;
+}
+
+#contentLeft, #contentCenter, #contentRight {
+    padding-bottom: 25px;
+    padding-left: 50px;
+}
+
+input {
+    width: 140px;
+}
+
+input, #deleteButton, #sumArray, #nbPosNeg, #splitButton{
+    width: 140px;
+}

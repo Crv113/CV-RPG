@@ -1,0 +1,93 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.ttf');
+}
+
+body {
+    background-color: rgb(128, 61, 61);
+}
+
+.login {
+    text-align: center;
+}
+
+.header {
+
+    font-family: BebasNeue;
+    line-height: 160px;
+    font-size: 200px;
+}
+
+.header-group {
+    margin-top: 45px;
+}
+
+.password,
+.btn {
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.password {
+    margin-top: 40px;
+}
+
+h3 {
+    color: red;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    border-bottom: solid 1px #191919;
+    border-top: solid 1px #191919;
+}
+
+.result-box {
+    margin-top: 35px;
+     border: solid 2px #191919;
+}
+
+.result-title {
+    background-color: #efefef;
+    border-bottom: solid 2px #191919;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.result-line {
+    background-color: #efefef;
+    border-bottom: solid 1px #191919;
+}
+
+.result-line:hover {
+    background-color: #cccccc;
+    cursor: pointer;
+}
+
+.strong {
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.reading-box {
+    border: solid 2px #191919;
+    margin-top: 50px;
+    background-color: #efefef;
+    padding: 10px;
+}
+
+.mail-header {
+    border-bottom: solid 1px #191919;
+}
+
+.element-title {
+    margin-top: 10px;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: black;
+}

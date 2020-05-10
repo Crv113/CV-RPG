@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, shrink-to-fit = no">
+    <LINK rel="icon" href="cv/img/favicon.png" />
+    <title>CV | Adrien Corvisier</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cvinteractif.css">
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div id="frame">
+            <div id="map">
+                <div id="sea"></div>
+                <!--Decorative objects-->
+                <div id="flower1" class="flowers"></div>
+                <div id="flower2" class="flowers"></div>
+                <div id="flower3" class="flowers"></div>
+                <div id="flower4" class="flowers"></div>
+                <div id="flower5" class="flowers"></div>
+                <div id="flower6" class="flowers"></div>
+
+                <div id="trunk1" class="trunks"></div>
+                <div id="trunk2" class="trunks"></div>
+                <div id="trunk3" class="trunks"></div>
+                <div id="trunk4" class="trunks"></div>
+
+                <div id="tree1" class="trees"></div>
+                <div id="tree2" class="trees"></div>
+                <div id="tree3" class="trees"></div>
+                <div id="tree4" class="trees"></div>
+                <div id="tree5" class="trees"></div>
+                <div id="tree6" class="trees"></div>
+                <!--Fences-->
+                <div id="left-fence"></div>
+                <div id="right-fence"></div>
+                <!--Roads-->
+                <div id="about-road" class="side-road road"></div>
+                <div id="education-road" class="side-road road"></div>
+                <div id="project-road" class="side-road road"></div>
+                <div id="main-road" class="road"></div>
+                <!--About chest & sign-->
+                <div id="about-chest" class="chest"></div>
+                <img src="img/sign.png" id="about-sign" class="sign" alt="sign">
+                <div id="about-sign-content" class="sign-content">À propos</div>
+                <!--Education chest & sign-->
+                <div id="education-chest" class="chest"></div>
+                <img src="img/sign.png" id="education-sign" class="sign" alt="sign">
+                <div id="education-sign-content" class="sign-content">Formations et compétences</div>
+                <!--Project chest & sign-->
+                <div id="project-chest" class="chest"></div>
+                <img src="img/sign.png" id="project-sign" class="sign" alt="sign">
+                <div id="project-sign-content" class="sign-content">Réalisations</div>
+                <!--Contact chest & sign-->
+                <div id="contact-chest"></div>
+                <img src="img/signback.png" id="contact-sign" class="sign" alt="sign">
+                <div id="contact-sign-content" class="sign-content">Me contacter</div>
+                <!--Bridge-->
+                <div id="bridge"></div>
+                <!--Player-->
+                <div id="player"><img id="player-img" src="img/b0.png" alt="player"></div>
+                <!-- Admin Panel -->
+                <a href="/cv/paneladmin/"><span id="admin-panel"></span></a>
+
+                <!--Overlays-->
+                <!-- ======================  How to play overlay ====================== -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 overlay-bg" id="howtoplay-overlay">
+
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-8 col-sm-10 overlay-content">
+                                    <div class="row header-overlay">
+                                        <div class="col-10">
+                                            <h3>Bienvenue sur mon CV !</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="close-overlay-btn" id="close-howtoplay">X</div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-overlay">
+                                        <div class="col-12">
+                                            <h5 class="text-danger overlay-title">Attention :</h5>
+                                            <p>Ce site n'interagit pas avec tous les appareils tactiles.
+                                                Si vous avez des difficultés de navigation, ou que vous souhaitez
+                                                consulter mon cv en version normale, <a href="/cv/cv_simple/">c'est par
+                                                    ici !</a></p>
+
+                                            <h5 class="overlay-title">Ce que vous pouvez faire :</h5>
+                                            <ul>
+                                                <li>
+                                                    <h6>Marcher :</h6>
+                                                </li>
+                                                <p>Utilisez Z,Q,S,D ou les flèches directionnelles pour vous déplacer en
+                                                    marchant.</p>
+
+                                                <li>
+                                                    <h6>Vous n'aimez pas marcher ? Téléportez vous :</h6>
+                                                </li>
+                                                <p>Cliquez à un endroit pour vous y téléporter et continuez le peu de
+                                                    chemin restant en marchant.</p>
+
+                                                <li>
+                                                    <h6>Vous n'aimez pas vous téléporter ni marcher ? Ouvrez directement
+                                                        les coffres :</h6>
+                                                </li>
+                                                <p>Cliquez sur un coffre pour l'ouvrir et voir son contenu.</p>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================  About overlay ====================== -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 overlay-bg" id="about-overlay">
+
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-sm-10 overlay-content">
+                                    <div class="row header-overlay">
+                                        <div class="col-10">
+                                            <h3>À propos</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="close-overlay-btn" id="close-about">X</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row justify-content-around text-overlay">
+                                        <div class="col-10 text-justify">
+                                            <p>Je m'appelle Adrien Corvisier, j'ai 23 ans et j'habite à La Rochelle(17).
+                                            </p>
+                                            <p>
+                                                Après avoir voyagé et travaillé dans divers domaines à la suite de mes
+                                                études, mon cheminement personnel,
+                                                ma curiosité et ma soif d'apprendre m'ont poussé à me tourner vers
+                                                l'apprentissage en autodidacte du développement web.
+                                            </p>
+                                            <p>
+                                                Le web est un domaine qui me passionne depuis toujours,
+                                                et de ce fait je souhaite intégrer la Licence Pro Developpement Web à La
+                                                Rochelle en septembre 2020 pour parfaire mes connaissances.
+                                                J'aime créer et je retrouve cette satisfaction et épanouissement à
+                                                travers le code.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center">
+                                            <img src="img/about.png" id="about-img" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================  Education overlay ====================== -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 overlay-bg" id="education-overlay">
+
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-sm-10 overlay-content">
+                                    <div class="row header-overlay">
+                                        <div class="col-10">
+                                            <h3>Formations</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="close-overlay-btn" id="close-education">X</div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-overlay justify-content-around">
+                                        <div class="col-lg-4 col-md-12">
+                                            <h5>Fin 2019 - 2020</h5>
+                                            <p>Apprentissage autodidacte du développement web sur mon temps libre avec
+                                                les ressources présentes sur internet.
+                                                J'ai appris plusieurs langages et me suis exercé en mettant en place des
+                                                projets personnel tel que ce site CV ou encore mon site de voyage. (voir
+                                                réalisations)
+                                            </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <h5>2014 - 2016</h5>
+                                            <p>BTS SNIR (Systèmes numériques option Informatique et Réseaux)</p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-12">
+                                            <h5>2011 - 2014</h5>
+                                            <p>BAC STI2D SIN (Système d'Information et Numérique)</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="row header-overlay">
+                                        <div class="col-12">
+                                            <h3>Compétences</h3>
+                                        </div>
+
+                                    </div>
+                                    <div class="row text-overlay justify-content-around">
+                                        <div class="col-lg-6 col-md-12">
+                                            <h5>Programmation</h5>
+                                            <ul>
+                                                <li>HTML/CSS</li>
+                                                <li>Javascript</li>
+                                                <li>PHP/SQL</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-lg-6 col-md-12">
+                                            <h5>Logiciel</h5>
+                                            <ul>
+                                                <li>Adobe Photoshop</li>
+                                                <li>Adobe Première Pro</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================  Project overlay ====================== -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 overlay-bg" id="project-overlay">
+
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-sm-10 overlay-content">
+                                    <div class="row header-overlay">
+                                        <div class="col-10">
+                                            <h3>Réalisations</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="close-overlay-btn" id="close-project">X</div>
+                                        </div>
+                                    </div>
+                                    <div class="row text-overlay">
+                                        <div class="col-12">
+                                            <h5>Programmation</h5>
+                                            <div class="row justify-content-around mb-3">
+
+                                                <div class="col-lg-3 col-md-5 col-sm-12 project-box">
+                                                    <a href="/cv/tableaux_javascript/" target="_blank">
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-title">
+                                                                <h4>Tableau Javascript</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-info">
+                                                                <p>Gestionnaire de chiffres dans des tableaux. Premier
+                                                                    exercice Javascript.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-3 col-md-5 col-sm-12 project-box">
+                                                    <a href="/cv/gestion_bdd/" target="_blank">
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-title">
+                                                                <h4>Gestion base de données</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-info">
+                                                                <p>Un registre de clients dans une base de données.
+                                                                    Premier exercice PHP/SQL.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-3 col-md-5 col-sm-12 project-box">
+                                                    <a href="https://adriencorvisier.fr" target="_blank">
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-title">
+
+                                                                <h4>Site CV Interactif</h4>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-info">
+                                                                <p>Site où vous vous trouvez actuellement.
+                                                                    CV sous forme de "jeu" où vous devez déplacer le
+                                                                    personnage pour accèder à chaque partie de mon CV.
+                                                                    Réalisé en Html/Css/Javascript.</p>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-3 col-md-5 col-sm-12 project-box">
+                                                    <a href="https://travellingfirst.com" target="_blank">
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-title">
+                                                                <h4>Site Travelling First</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-info">
+                                                                <p>Un site résumant mon année de voyage en Australie.
+                                                                    Réalisé en Html/Css/Javascript/Php.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-3 col-md-5 col-sm-12 project-box">
+                                                    <a href="/cv/cv_simple/" target="_blank">
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-title">
+                                                                <h4>Site CV Simple</h4>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12 project-box-info">
+                                                                <p>Un site CV simplifié car le site CV Interractif n'est
+                                                                    pas accessible pour les smartphones et tablettes.
+                                                                    Réalisé en Html/Css/Javascript.</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                            <h5>Logiciel</h5>
+                                            <p>Réalisation / Montage de vidéos de voyages avec Adobe Premiere Pro.</p>
+                                            <div class="row justify-content-around">
+
+                                                <div class="col-xl-4 col-lg-12 video">
+                                                    <div class="video-container">
+                                                        <iframe width="560" height="315"
+                                                            src="https://www.youtube.com/embed/bgCP9JF0Ag0"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-12 video">
+                                                    <div class="video-container">
+                                                        <iframe width="560" height="315"
+                                                            src="https://www.youtube.com/embed/jh1J-s8RnKc"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-12 video">
+                                                    <div class="video-container">
+                                                        <iframe width="560" height="315"
+                                                            src="https://www.youtube.com/embed/XqF9SZ2xL8o"
+                                                            frameborder="0"
+                                                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                            allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ======================  Contact overlay ====================== -->
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 overlay-bg" id="contact-overlay">
+
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-sm-10 overlay-content">
+                                    <div class="row header-overlay">
+                                        <div class="col-10">
+                                            <h3>Me contacter</h3>
+                                        </div>
+                                        <div class="col-2">
+                                            <div class="close-overlay-btn" id="close-contact">X</div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center text-overlay">
+                                        <div class="col-10">
+                                            <form action="sendemail.php" method="post">
+                                                <div class="form-row">
+                                                    <div class="form-group col-lg-6 col-md-12">
+                                                        <input type="text" class="form-control" id="contact-name"
+                                                            name="name" placeholder="Nom" required>
+                                                    </div>
+                                                    <div class="form-group col-lg-6 col-md-12">
+                                                        <input type="email" class="form-control" id="contact-email"
+                                                            name="email" placeholder="Email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-12">
+                                                        <input type="text" class="form-control" id="contact-subject"
+                                                            name="subject" placeholder="Objet" required>
+                                                    </div>
+                                                </div>
+                                                <div class="form-row">
+                                                    <div class="form-group col-12">
+                                                        <textarea class="form-control" name="message"
+                                                            id="contact-message" rows="10" placeholder="Message"
+                                                            required></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="row justify-content-between mt-3">
+                                                    <div class="col-4 ">
+                                                        <a href="https://www.linkedin.com/in/adrien-corvisier-b37a191a1/"
+                                                            target="_blank">
+                                                            <img src="img/linkedin.png" class="social" alt="linkedin" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 text-center">
+                                                        <a href="https://github.com/Crv113" target="_blank">
+                                                            <img src="img/github.png" class="social" alt="github" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-4 text-right"><button type="submit"
+                                                            class="btn btn-dark">Envoyer</button></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!--End map-->
+            </div>
+            <!--End frame-->
+        </div>
+        <!--Others scripts-->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+        </script>
+        <!--My scripts-->
+        <script src="js/teleportPlayer.js"></script>
+        <script src="js/move.js"></script>
+        <script src="js/overlay.js"></script>
+        <script src="js/chest.js"></script>
+        <script src="js/playerAnimation.js"></script>
+        <script src="js/main.js"></script>
+    </div>
+</body>
+
+</html>

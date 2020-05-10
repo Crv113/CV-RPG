@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/tableau.css">
+        <title>Tableaux Javascript</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>GESTIONNAIRE DE TABLEAU</h1>
+        </header>
+        <div id="generalContent">
+            <div id="left">
+                <div id="contentLeft">
+                    <h2>Remplissez votre tableau de nombres</h2>
+                    <div id="showArray"></div>
+                    <label for="arrayInput">Nombre entier uniquement</label><br/>
+                    <input type="number" id="arrayInput" name="arrayInput" required>
+                    <button id="addButton" type="button">+</button><br/><br/>
+                    <button id="deleteButton" type="button">Vider le tableau</button><br/><br/>
+                    <button id="sumArray" type="button">Somme du tableau</button>
+                    <p id="resultSum"></p>
+                    <button id="nbPosNeg" type="button">Positifs/négatifs</button>
+                    <p id="resultPosNeg"></p>
+                    <button id="splitButton" type="button">Séparer</button>
+                </div>
+            </div>
+
+            <div id="center">
+                <div id="contentCenter"></div>
+            </div>
+
+            <div id="right">
+                <div id="contentRight"></div>
+            </div>
+        </div>
+        <script src="js/fonctionsTableau.js"></script>
+        <script src="js/tableau.js"></script>
+    </body>
+</html>

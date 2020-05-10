@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('BebasNeue-Regular.ttf');
+}
+
+body {
+    background-color: rgb(191, 247, 255);
+}
+
+#newCustomer {
+    border: solid 3px #191919;
+    background: rgb(191, 247, 255);
+    margin-top: 50px;
+    vertical-align: middle;
+    font-family: BebasNeue;
+    font-size: xx-large;
+    letter-spacing: 3px;
+    height: 60px;
+    line-height: 60px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+#newCustomer:hover {
+    background: rgb(162, 211, 218);
+    cursor: pointer;
+
+}
+
+#alreadyCustomer {
+    border-top: solid 3px #191919;
+    border-left: solid 3px #191919;
+    border-right: solid 3px #191919;
+    border-bottom: solid 2px #191919;
+     background: rgb(191, 247, 255);
+    margin-top: 50px;
+    vertical-align: middle;
+    font-family: BebasNeue;
+    font-size: xx-large;
+    letter-spacing: 3px;
+    height: 60px;
+    line-height: 60px;
+    transition: 0.3s;
+    user-select: none;
+}
+
+
+
+#newFormBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: solid 3px #191919;
+    border-right: solid 3px #191919;
+    border-bottom: solid 3px #191919;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#newFormWrap {
+    overflow: hidden;
+    height: 0;
+    transition: 1s;
+}
+
+#customerSearchBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: solid 3px #191919;
+    border-right: solid 3px #191919;
+    border-bottom: solid 3px #191919;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+#customerSearchWrap {
+    margin-bottom: 35px;
+}
+
+.resultBox {
+    border-left: solid 5px #191919;
+    margin: 15px 0px 0px 0px;
+    padding: 15px 0;
+    background: rgb(255, 255, 255);
+}
+
+#archivesBox {
+    margin-top: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: solid 3px #191919;
+}
+
+/* OTHER */
+h2 {
+    text-align: center;
+    margin-top: 25px;
+    border-bottom: solid 1px #191919;
+    border-top: solid 1px #191919;
+}
+
+.editBtn,
+.deleteBtn,
+.restaureBtn {
+    font-size: 0.8rem;
+    padding: 1px 6px;
+    width: 71px;
+}
+
+.searchBtn {
+    margin-top: 30px;
+}
+
+/* Edit Form */
+#editFormWrap {
+    margin-top: 50px;
+}
+
+#editFormBox {
+    border: solid 3px #191919;
+    padding: 20px;
+}
