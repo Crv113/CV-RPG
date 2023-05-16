@@ -1,4 +1,4 @@
-🚶‍♂ CV "RPG" 🚶‍♂️ 
+🚶‍♂ CV (resume) "RPG" 🚶‍♂️ 
 
 📅 April 2020
 
@@ -18,3 +18,26 @@ It works perfectly on a computer, allowing players to move the character using Z
 For mobile devices or other touch screens, I have implemented an option to "teleport" by simply clicking anywhere.
 
 When you approach a safe, it will automatically open and display a modal with its contents.
+
+I incorporated several projects to this one to show my learnings directly in this site. 
+This is why you may see strange directory names. I will describe them :
+
+✨ cv_simple ✨
+
+This is a version of my resume on a simple website, for those who don't want to mess with the character on the RPG version.
+You can access this site by a link in the first information modal when you arrive on the site.
+
+✨ gestion_bdd ✨
+
+This was my first project/exercice with PHP / MySQL and a database.
+I just simulated a customer directory with their information.
+
+✨ paneladmin ✨
+
+
+Paneladmin was only for me, all contact forms from cv-rpg / cv-simple and travellingfirst.com did not send an email 
+but instead stored the data in a database, and I accessed this information through the paneladmin.
+
+✨ tableaux_javascript ✨
+
+This was the first javascript exercise on numbers and comparisons.
